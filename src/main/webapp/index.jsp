@@ -1,8 +1,6 @@
 <html>
 <body>
-<h2>Hello from Telnetinfo - Welcome to Devops world</h2>
-<p>You have successfully deployed tomcat application from GIT / Jenkins!</p>
-<p>Adding new data, required by business!</p>
-<p>Teting SCM pull to make sure auto trigger my build</p>
+<h2>This is my first application deployment</h2>
+<p>Deployment from Jenkins</p>
 </body>
 </html>
