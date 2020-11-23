@@ -17,41 +17,19 @@
   </dependencies>
   <build>
   <plugins>
-    <plugin>
-      <groupId>org.jboss.as.plugins</groupId>
-      <artifactId>jboss-as-maven-plugin</artifactId>
-      <version>7.1.0.Final</version>
-      <executions>
-        <execution>
-        <phase>install</phase>
-        <goals>
-           <goal>deploy</goal>
-        </goals>
-    </plugin>
-    <plugin>
-      <groupId>org.codehaus.cargo</groupId>
-      <artifactId>cargo-maven2-plugin</artifactId>
-      <version>1.2.0</version>
-      <configuration>
-        <container>
-          <containerId>jboss71x</containerId>
-          <home>E:\jboss-7.1.0.GA</home>
-          <timeout>600000</timeout>
-          <append>false</append>
-        </container>
-        <configuration>
-        <type>existing</type>
-        <home>E:\jboss-5.1.0.GA\server\default</home>
-        <properties>
-           <cargo.servlet.port>8090</cargo.servlet.port>
-           <cargo.jboss.configuration>default</cargo.jboss.configuration>
-           <cargo.hostname>localhost</cargo.hostname>
-           <cargo.rmi.port>1099</cargo.rmi.port>
-        </properties>
-        </configuration>
-      </configuration>
-    </plugin> 
+      <plugin>
+          <groupId>org.jibx</groupId>
+          <artifactId>jibx-maven-plugin</artifactId>
+          <version>1.2.4</version>
+          <executions>
+             <execution>
+               <goals>
+                  <goal>bind</goal>
+               </goals>
+             </execution>
+          </executions>
+      </plugin>
   </plugins>
-    <finalName>mywebapp</finalName>
+  <finalName>mywebapp</finalName>
   </build>
 </project>
