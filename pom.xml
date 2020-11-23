@@ -18,4 +18,38 @@
   <build>
     <finalName>mywebapp</finalName>
   </build>
+  <plugin>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-compiler-plugin</artifactId>
+      <version>2.3.2</version>
+      <configuration>
+        <source>1.6</source>
+        <target>1.6</target>
+        <encoding>UTF-8</encoding>
+      </configuration>
+  </plugin>
+  <plugin>
+  <groupId>org.codehaus.cargo</groupId>
+  <artifactId>cargo-maven2-plugin</artifactId>
+  <version>1.2.0</version>
+  <configuration>
+    <container>
+      <containerId>jboss51x</containerId>
+      <home>E:\jboss-5.1.0.GA</home>
+       <timeout>600000</timeout>
+        <append>false</append>
+    </container>
+    <configuration>
+      <type>existing</type>
+      <home>E:\jboss-5.1.0.GA\server\default</home>
+      <properties>
+       <cargo.servlet.port>8090</cargo.servlet.port>
+       <cargo.jboss.configuration>default</cargo.jboss.configuration>
+        <cargo.hostname>localhost</cargo.hostname>
+        <cargo.rmi.port>1099</cargo.rmi.port>
+      </properties>
+    </configuration>
+  </configuration>
+
+  </plugin> 
 </project>
