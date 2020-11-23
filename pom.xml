@@ -15,6 +15,8 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  <build>
+    <finalName>mywebapp</finalName>
   <plugin>
       <groupId>org.apache.maven.plugins</groupId>
       <artifactId>maven-compiler-plugin</artifactId>
@@ -47,9 +49,6 @@
       </properties>
     </configuration>
   </configuration>
-
   </plugin> 
-  <build>
-    <finalName>mywebapp</finalName>
   </build>
 </project>
