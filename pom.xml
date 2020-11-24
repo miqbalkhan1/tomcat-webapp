@@ -16,20 +16,6 @@
     </dependency>
   </dependencies>
   <build>
-  <plugins>
-      <plugin>
-          <groupId>org.jibx</groupId>
-          <artifactId>jibx-maven-plugin</artifactId>
-          <version>1.2.4</version>
-          <executions>
-             <execution>
-               <goals>
-                  <goal>bind</goal>
-               </goals>
-             </execution>
-          </executions>
-      </plugin>
-  </plugins>
-  <finalName>mywebapp</finalName>
+    <finalName>mywebapp</finalName>
   </build>
 </project>
